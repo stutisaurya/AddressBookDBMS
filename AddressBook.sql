@@ -29,4 +29,8 @@ SELECT DATABASE();
     	('Sahil','Anand','Rajgir','Bangalore','pqr',560059,9864727523,'sahil12@gmail.com');
 	    SELECT * FROM Add_Book;
         DROP TABLE add_book;
+#Uc4
+
+     UPDATE add_book set city = 'Agra' WHERE first_name = 'Sahil';	
+     SELECT * FROM add_book;
 
