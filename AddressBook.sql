@@ -33,4 +33,10 @@ SELECT DATABASE();
 
      UPDATE add_book set city = 'Agra' WHERE first_name = 'Sahil';	
      SELECT * FROM add_book;
+     
+#Uc5
+
+	 DELETE from add_book WHERE first_name = 'Sahil';
+	 SELECT * FROM add_book;
+
 
