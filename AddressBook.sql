@@ -28,5 +28,5 @@ SELECT DATABASE();
 		('Sakshi','Priyal','Gaya','Goa','ghi', 560057,9745277712,'sakshi123@gmail.com'),
     	('Sahil','Anand','Rajgir','Bangalore','pqr',560059,9864727523,'sahil12@gmail.com');
 	    SELECT * FROM Add_Book;
-        DROP TABLE address_book;
+        DROP TABLE add_book;
 
