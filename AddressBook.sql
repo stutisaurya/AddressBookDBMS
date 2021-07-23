@@ -39,5 +39,4 @@ SELECT DATABASE();
 	 DELETE from add_book WHERE first_name = 'Sahil';
 	 SELECT * FROM add_book;
 #Uc6
-
-
+	   SELECT * FROM add_book WHERE city="Bangalore" AND state="Kar";
