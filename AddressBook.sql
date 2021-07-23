@@ -38,5 +38,6 @@ SELECT DATABASE();
 
 	 DELETE from add_book WHERE first_name = 'Sahil';
 	 SELECT * FROM add_book;
+#Uc6
 
 
