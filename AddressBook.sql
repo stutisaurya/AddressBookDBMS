@@ -44,5 +44,6 @@ SELECT DATABASE();
 #Uc7
 	 SELECT state, COUNT(first_name) FROM add_book GROUP BY state;
 	 SELECT city, COUNT(first_name) FROM add_book GROUP BY city;			
-        
+#UC8 
+	 SELECT * FROM add_book WHERE city="Bangalore"  ORDER BY first_name ASC;       
 
