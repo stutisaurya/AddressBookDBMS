@@ -27,7 +27,7 @@ SELECT DATABASE();
 	    ('Stuti','Saurya','Rajgir', 'Delhi', 'abc',560058, 9695592954, 'stuti@gmail.com'),
 		('Sakshi','Priyal','Gaya','Goa','ghi', 560057,9745277712,'sakshi123@gmail.com'),
     	('Sahil','Anand','Rajgir','Bangalore','pqr',560059,9864727523,'sahil12@gmail.com');
-	    SELECT * FROM Add_Book;
+	    SELECT * FROM add_Book;
         DROP TABLE add_book;
 #Uc4
 
@@ -39,4 +39,10 @@ SELECT DATABASE();
 	 DELETE from add_book WHERE first_name = 'Sahil';
 	 SELECT * FROM add_book;
 #Uc6
-	   SELECT * FROM add_book WHERE city="Bangalore" AND state="Kar";
+	 SELECT * FROM add_book WHERE city="Bangalore" AND state="Kar";
+
+#Uc7
+	 SELECT state, COUNT(first_name) FROM add_book GROUP BY state;
+	 SELECT city, COUNT(first_name) FROM add_book GROUP BY city;			
+        
+
