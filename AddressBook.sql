@@ -46,4 +46,13 @@ SELECT DATABASE();
 	 SELECT city, COUNT(first_name) FROM add_book GROUP BY city;			
 #UC8 
 	 SELECT * FROM add_book WHERE city="Bangalore"  ORDER BY first_name ASC;       
+#Uc9
+	 alter table add_book add addbook_type varchar(150);	
+	 select * from add_book;
+       
+	UPDATE add_book SET addbook_type="family" WHERE first_name="Rahmi";
+	UPDATE add_book SET addbook_type="family" WHERE first_name="Rekha";
+	UPDATE add_book SET addbook_type="friend" WHERE first_name="Riya";	
+	select * from add_book;
+
 
