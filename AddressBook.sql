@@ -50,12 +50,18 @@ SELECT DATABASE();
 	 alter table add_book add addbook_type varchar(150);	
 	 select * from add_book;
        
-	UPDATE add_book SET addbook_type="family" WHERE first_name="Rahmi";
-	UPDATE add_book SET addbook_type="family" WHERE first_name="Rekha";
+	UPDATE add_book SET addbook_type="family" WHERE first_name="Stuti";
+	UPDATE add_book SET addbook_type="family" WHERE first_name="Sakshi";
 	UPDATE add_book SET addbook_type="friend" WHERE first_name="Riya";	
 	select * from add_book;
 #Uc10 
-	SELECT first_name,addbook_type,COUNT(addbook_type) FROM add_book GROUP BY first_name;		
+	SELECT first_name,addbook_type,COUNT(addbook_type) FROM add_book GROUP BY first_name;	
+#Uc11
+    	UPDATE add_book SET addbook_type="family" WHERE first_name="Sakshi";
+		UPDATE add_book SET addbook_type="family" WHERE first_name="Stuti";
+
+
+	
 
 
 
