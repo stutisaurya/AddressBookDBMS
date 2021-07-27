@@ -59,8 +59,45 @@ SELECT DATABASE();
 #Uc11
     	UPDATE add_book SET addbook_type="family" WHERE first_name="Sakshi";
 		UPDATE add_book SET addbook_type="family" WHERE first_name="Stuti";
+
 #Uc12
-	CREATE TABLE Address
+	CREATE TABLE book_user (
+    user_id INT PRIMARY KEY,
+    first_name VARCHAR(100) NOT NULL,
+    last_name VARCHAR(100) NOT NULL
+);
+	CREATE TABLE addressbook(
+	user_id int PRIMARY KEY,
+	address VARCHAR(100) NOT NULL,
+	city VARCHAR(50) NOT NULL,
+	state VARCHAR(50) NOT NULL,
+	zip VARCHAR(10) NOT NULL
+     );
+    ALTER TABLE addressbook
+	ADD FOREIGN KEY(user_id) REFERENCES book_user(user_id);
+    
+    CREATE TABLE Contact(
+	user_id INT,
+	phone VARCHAR(15),
+	email VARCHAR(40),
+	FOREIGN KEY(user_id) REFERENCES book_user(user_id)
+     );
+ CREATE TABLE contact_business
+     (
+      type_id INT,
+      type_of_contact  VARCHAR(20)
+     );
+ ALTER TABLE contact_business
+    ADD PRIMARY KEY(type_id);
+ CREATE TABLE address_book_user
+     (
+      user_id INT,
+      type_id INT,
+      FOREIGN KEY(user_id) REFERENCES book_user(user_id),
+      FOREIGN KEY(type_id) REFERENCES contact_business(type_id)
+     );
+    desc address_book_user;
+
     
 
 		
