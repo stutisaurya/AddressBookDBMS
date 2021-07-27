@@ -9,15 +9,17 @@ SELECT DATABASE();
 	CREATE TABLE Add_Book
 	(
     	id               INT unsigned NOT NULL AUTO_INCREMENT,	
-    	first_name       VARCHAR(50) NOT NULL,			
-    	last_name        VARCHAR(50),				
-    	address          VARCHAR(150) NOT NULL,			
-    	city             VARCHAR(30) NOT NULL,			
-    	state            VARCHAR(30) NOT NULL,			
-    	zip              INT(6) NOT NULL,				
-    	phone_number     VARCHAR(13) NOT NULL,		
-    	email            VARCHAR(50) NOT NULL,			
-    	PRIMARY KEY(id)					
+    	first_name       VARCHAR(200) NOT NULL,			
+    	last_name        VARCHAR(150),	
+		city             VARCHAR(200) NOT NULL,			
+    	address          VARCHAR(200) NOT NULL,
+		state            VARCHAR(200) NOT NULL,			
+    	zip              VARCHAR(10) NOT NULL,				
+    	phone_no         VARCHAR(150) NOT NULL,		
+    	email            VARCHAR(255) NOT NULL,	
+		name             VARCHAR(20) NOT NULL,
+		type             VARCHAR(20) NOT NULL,
+        PRIMARY KEY(id)					
 	);
     
 	DESCRIBE Add_Book;
