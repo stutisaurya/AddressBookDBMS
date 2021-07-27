@@ -100,7 +100,6 @@ SELECT DATABASE();
       FOREIGN KEY(user_id) REFERENCES book_user(user_id),
       FOREIGN KEY(type_id) REFERENCES contact_business(type_id)
      );
-    desc address_book_user;
 
     
 
