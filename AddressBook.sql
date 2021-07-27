@@ -84,6 +84,7 @@ SELECT DATABASE();
 	email VARCHAR(40),
 	FOREIGN KEY(user_id) REFERENCES book_user(user_id)
      );
+ 
  CREATE TABLE contact_business
      (
       type_id INT,
@@ -91,6 +92,7 @@ SELECT DATABASE();
      );
  ALTER TABLE contact_business
     ADD PRIMARY KEY(type_id);
+ 
  CREATE TABLE address_book_user
      (
       user_id INT,
