@@ -52,13 +52,18 @@ SELECT DATABASE();
        
 	UPDATE add_book SET addbook_type="family" WHERE first_name="Stuti";
 	UPDATE add_book SET addbook_type="family" WHERE first_name="Sakshi";
-	UPDATE add_book SET addbook_type="friend" WHERE first_name="Riya";	
+	UPDATE add_book SET addbook_type="friend" WHERE first_name="Sahil";	
 	select * from add_book;
 #Uc10 
 	SELECT first_name,addbook_type,COUNT(addbook_type) FROM add_book GROUP BY first_name;	
 #Uc11
     	UPDATE add_book SET addbook_type="family" WHERE first_name="Sakshi";
 		UPDATE add_book SET addbook_type="family" WHERE first_name="Stuti";
+#Uc12
+	CREATE TABLE Address
+    
+
+		
 
 
 	
